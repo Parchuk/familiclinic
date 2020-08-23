@@ -335,14 +335,15 @@ document.querySelector('.contact-form__button input').addEventListener('click', 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// document.body = addEventListener('load', function () {
-//     setTimeout(function () {
-//         let preloader = document.querySelector('#page-preloader');
-//         if (!preloader.classList.contains('done')) {
-//             preloader.classList.add('done');
-//         }
-//     }, 1000);
-// });
+document.body = addEventListener('load', function () {
+  setTimeout(function () {
+    var preloader = document.querySelector('#page-preloader');
+
+    if (!preloader.classList.contains('done')) {
+      preloader.classList.add('done');
+    }
+  }, 1000);
+});
 
 /***/ }),
 
