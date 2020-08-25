@@ -18566,6 +18566,8 @@ ul {
 }
 
 .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__main .contact-form__input input {
+  box-shadow: none;
+  -webkit-appearance: none;
   width: 100%;
   height: 42px;
   outline: none;
@@ -18575,7 +18577,6 @@ ul {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 0;
   transition: 0.3s border;
   cursor: pointer;
 }
@@ -22473,6 +22474,10 @@ ul {
 
   .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__main .contact-form__input .contact-form__input-date input::after {
     right: 15px;
+  }
+
+  .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__main .contact-form__input .custom-select i {
+    margin-right: 5px;
   }
 
   .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__main .contact-form__input .custom-select .select {
