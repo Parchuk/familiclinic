@@ -18606,7 +18606,8 @@ ul {
 }
 
 .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__main .contact-form__input input[type="date"] {
-  min-width: 96%;
+  min-width: 95.5%;
+  background-color: inherit;
 }
 
 .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__main .contact-form__input input[type=date]::-webkit-calendar-picker-indicator {
