@@ -22431,6 +22431,23 @@ ul {
     align-self: flex-end;
   }
 
+  .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__main .contact-form__input input {
+    background-color: inherit;
+    border-style: solid;
+  }
+
+  .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__main .contact-form__input .contact-form__input-date input::after {
+    right: 15px;
+  }
+
+  .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__main .contact-form__input .custom-select i {
+    margin-right: 5px;
+  }
+
+  .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__main .contact-form__input .custom-select .select {
+    background-color: inherit;
+  }
+
   .appointment .container-fluid .container .appointment__content .appointment__location .appointment__location__head-text {
     padding: 25px 0 0 0;
   }
@@ -22465,23 +22482,6 @@ ul {
 
   .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__main .contact-form__input:last-of-type {
     padding: 0 15px;
-  }
-
-  .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__main .contact-form__input input {
-    background-color: inherit;
-    border-style: solid;
-  }
-
-  .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__main .contact-form__input .contact-form__input-date input::after {
-    right: 15px;
-  }
-
-  .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__main .contact-form__input .custom-select i {
-    margin-right: 5px;
-  }
-
-  .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__main .contact-form__input .custom-select .select {
-    background-color: inherit;
   }
 
   .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__button {
