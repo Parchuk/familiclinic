@@ -324,35 +324,7 @@ document.querySelector('.contact-form__button input').addEventListener('click', 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// header-fixed
-window.onscroll = function () {
-  headerFixed();
-};
 
-var header = document.querySelector('.header');
-var sticky = header.offsetTop;
-
-function headerFixed() {
-  console.log(header.offsetTop);
-
-  if (window.pageYOffset > sticky) {
-    header.classList.add('header-fixed');
-  } else if (window.pageYOffset == 0) {
-    header.classList.remove('header-fixed');
-  } else {
-    header.classList.add('header-fixed');
-  }
-}
-
-; // mobile-btn
-
-document.querySelector('.mobile').addEventListener('click', function () {
-  document.querySelector('.bar1').classList.toggle('bar1-active');
-  document.querySelector('.bar2').classList.toggle('bar2-active');
-  document.querySelector('.bar3').classList.toggle('bar3-active');
-  document.querySelector('.bar4').classList.toggle('bar4-active');
-  document.querySelector('.mobile-menu__item').classList.toggle('mobile-menu__active');
-});
 
 /***/ }),
 
@@ -375,6 +347,116 @@ document.body = addEventListener('load', function () {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/reviewsOfDoctors/reviewsOfDoctors.js":
+/*!*****************************************************************!*\
+  !*** ./src/blocks/modules/reviewsOfDoctors/reviewsOfDoctors.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function showMore() {
+  var $span = document.querySelectorAll('.review__customer__text > p > span');
+
+  var _iterator = _createForOfIteratorHelper($span),
+      _step;
+
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      var elm = _step.value;
+
+      if (elm.textContent.length > 160) {
+        var arrText = elm.textContent;
+        var arrShort = arrText.slice(0, 120);
+        var $p = elm.parentElement;
+        $p.innerHTML = "<span>\u2014 \"".concat(arrShort, "\"...</span><a>\u0427\u0438\u0442\u0430\u0442\u0438 \u043F\u043E\u0432\u043D\u0456\u0441\u0442\u044E >></a>");
+        showAllText(arrText, arrShort, $p);
+      }
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
+
+  function showAllText(arrText, arrShort, $p) {
+    $p.lastChild.addEventListener('click', function (e) {
+      var reviewItem = document.querySelectorAll('.review__item');
+      var currentItem;
+
+      var _iterator2 = _createForOfIteratorHelper(reviewItem),
+          _step2;
+
+      try {
+        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+          item = _step2.value;
+
+          if (!item.classList.contains('openReview')) {
+            normalHeightItem = item.offsetHeight;
+          }
+        }
+      } catch (err) {
+        _iterator2.e(err);
+      } finally {
+        _iterator2.f();
+      }
+
+      if (e.target.tagName === 'A') {
+        if (e.target.textContent === 'Читати повністю >>') {
+          e.target.textContent = '<< Сховати';
+          e.target.previousElementSibling.textContent = "\u2014 \"".concat(arrText, "\"");
+          currentItem = e.target.parentElement.parentElement.parentElement.parentElement.parentElement;
+          currentItem.classList.toggle('openReview');
+        } else {
+          e.target.textContent = 'Читати повністю >>';
+          e.target.previousElementSibling.textContent = "\u2014 \"".concat(arrShort, "...\"");
+          currentItem = e.target.parentElement.parentElement.parentElement.parentElement.parentElement;
+          currentItem.classList.toggle('openReview');
+          normalHeightItem = 'auto';
+        }
+      }
+
+      leveTheHeight(normalHeightItem, currentItem);
+    });
+  }
+
+  function leveTheHeight(normalHeightItem) {
+    var reviewItem = document.querySelectorAll('.review__item');
+
+    var _iterator3 = _createForOfIteratorHelper(reviewItem),
+        _step3;
+
+    try {
+      for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+        item = _step3.value;
+
+        if (!item.classList.contains('openReview')) {
+          if (typeof normalHeightItem == 'number') {
+            item.style.height = normalHeightItem + 'px';
+          } else {
+            item.style.height = normalHeightItem;
+          }
+        } else {
+          item.style.height = 'auto';
+        }
+      }
+    } catch (err) {
+      _iterator3.e(err);
+    } finally {
+      _iterator3.f();
+    }
+  }
+}
+
+showMore();
+
+/***/ }),
+
 /***/ "./src/js/import/modules.js":
 /*!**********************************!*\
   !*** ./src/js/import/modules.js ***!
@@ -386,11 +468,14 @@ document.body = addEventListener('load', function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_appointment_appointment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/appointment/appointment */ "./src/blocks/modules/appointment/appointment.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _modules_preloader_preloader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/preloader/preloader */ "./src/blocks/modules/preloader/preloader.js");
-/* harmony import */ var _modules_preloader_preloader__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_preloader_preloader__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _modules_reviewsOfDoctors_reviewsOfDoctors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/reviewsOfDoctors/reviewsOfDoctors */ "./src/blocks/modules/reviewsOfDoctors/reviewsOfDoctors.js");
+/* harmony import */ var _modules_reviewsOfDoctors_reviewsOfDoctors__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_reviewsOfDoctors_reviewsOfDoctors__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_appointment_appointment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/appointment/appointment */ "./src/blocks/modules/appointment/appointment.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _modules_preloader_preloader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/preloader/preloader */ "./src/blocks/modules/preloader/preloader.js");
+/* harmony import */ var _modules_preloader_preloader__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_preloader_preloader__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 

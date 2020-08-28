@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-/* Color Theme Swatches in Hex */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -18285,11 +18283,6 @@ h6,
 ul {
   margin: 0;
   padding: 0;
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 .container {
@@ -18297,314 +18290,6 @@ a {
   margin: 0 auto;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
-}
-
-.p {
-  height: 900px;
-}
-
-.header i {
-  color: #04aac7;
-}
-
-.header-container {
-  display: flex;
-}
-
-.header-fixed {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  transition: 0.3s;
-}
-
-.header-fixed .header-info {
-  display: none;
-}
-
-.header-fixed .header-nav {
-  border: none;
-}
-
-.header-fixed .header-logo__icon {
-  width: 177px;
-}
-
-.header-logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-}
-
-.header-logo__link-home {
-  padding: 0;
-}
-
-.header-logo__icon {
-  padding: 12px 15px 0 0;
-  width: 225px;
-}
-
-.mobile {
-  display: none;
-  position: relative;
-  width: 30px;
-  height: 30px;
-}
-
-.mobile__btn {
-  cursor: pointer;
-  width: 26px;
-  height: 30px;
-  position: absolute;
-  outline: none !important;
-  border: none;
-  background: none;
-}
-
-.mobile__btn:active,
-.mobile__btn:focus {
-  outline: none;
-}
-
-.mobile__btn .bar {
-  left: 0;
-  background: #04aac7;
-  width: 26px;
-  height: 6px;
-  display: block;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-  position: absolute;
-}
-
-.mobile__btn .bar1 {
-  top: 0;
-}
-
-.mobile__btn .bar2,
-.mobile__btn .bar3 {
-  top: 12px;
-}
-
-.mobile__btn .bar4 {
-  bottom: 0;
-}
-
-.mobile__btn .bar1-active {
-  top: 12px;
-  transform: rotate3d(0, 0, 1, -45deg);
-  transform-origin: 50% 50%;
-}
-
-.mobile__btn .bar2-active {
-  transform: translateX(26px);
-  background-color: transparent;
-}
-
-.mobile__btn .bar3-active {
-  transform: translateX(26px);
-  background-color: transparent;
-}
-
-.mobile__btn .bar4-active {
-  transform: rotate3d(0, 0, 1, 45deg);
-  transform-origin: 50% 50%;
-  bottom: 12px;
-}
-
-.mobile-menu {
-  display: none;
-  position: relative;
-  padding: 0;
-}
-
-.mobile-menu .mobile-menu__active {
-  max-height: 470px;
-  transition: 0.5s;
-  opacity: 1;
-}
-
-.mobile-menu__item {
-  width: 100%;
-  position: absolute;
-  z-index: 9;
-  background: #04aac7;
-  transition: 0.5s;
-  max-height: 0;
-  opacity: 0;
-}
-
-.mobile-menu__link {
-  border-bottom: 1px solid #fff;
-  text-transform: uppercase;
-}
-
-.mobile-menu__link a {
-  display: block;
-  padding: 18px 30px 15px;
-  font-size: 18px;
-  font-family: "Roboto-Medium";
-  color: #fff;
-}
-
-.header-content {
-  padding: 0;
-}
-
-.header-info {
-  padding: 12px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-address,
-.header-schedule,
-.header-phone {
-  display: flex;
-  align-items: center;
-}
-
-.header-info-box {
-  align-items: center;
-  position: relative;
-}
-
-.header-info-box__icon {
-  font-size: 22px;
-  padding-right: 10px;
-}
-
-.header-info-box__text {
-  display: flex;
-  flex-direction: column;
-  color: #4c4c4c;
-}
-
-.header-info-box__text strong {
-  font-weight: 500;
-  font-size: 14px;
-  font-family: "Roboto-Medium";
-  color: #505050;
-}
-
-.header-info-box__text span {
-  font-size: 12px;
-  font-family: "Roboto-Light";
-  color: inherit;
-}
-
-.header-info-box__link {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.header-info-box .header-phone__icon {
-  font-size: 30px;
-  transform: rotate(20deg);
-}
-
-.header-info-box__phone {
-  font-weight: 500;
-  line-height: 1.2;
-  font-size: 20px;
-  font-family: "Roboto-Medium";
-  color: #505050;
-}
-
-.header-info-box__phone:hover {
-  text-decoration: underline;
-}
-
-.header-info-box .header-social__link i {
-  font-size: 20px;
-  padding-right: 5px;
-  color: #767676;
-  transition: 0.3s;
-}
-
-.header-info-box .header-social__link i:hover {
-  color: #04aac7;
-  transition: 0.3s;
-}
-
-.header-info-box .header-btn {
-  display: flex;
-  align-items: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background-color: #04aac7;
-  padding: 10px 20px;
-  transition: 0.5s;
-}
-
-.header-info-box .header-btn .header-info-box__icon i {
-  color: #fff;
-}
-
-.header-info-box .header-btn .header-info-box__text strong {
-  color: #fff;
-}
-
-.header-info-box .header-btn:hover {
-  background-color: #037f95;
-}
-
-.header-nav {
-  padding: 20px 0;
-  border-top: 1px solid #4c4c4c;
-}
-
-.navbar__menu {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar__item {
-  display: flex;
-  align-items: center;
-}
-
-.navbar__item_red .navbar__i {
-  color: red;
-}
-
-.navbar__i {
-  padding-right: 8px;
-  font-size: 30px;
-}
-
-.navbar__link {
-  position: relative;
-  display: flex;
-  align-items: center;
-  line-height: 1;
-  font-size: 15px;
-  font-family: "Roboto-Medium";
-  color: #505050;
-}
-
-.navbar__link:after {
-  display: block;
-  content: '';
-  background-color: #04aac7;
-  height: 2px;
-  width: 0%;
-  left: 51%;
-  position: absolute;
-  bottom: -8px;
-  transition: width 0.3s ease-in-out;
-  transform: translateX(-50%);
-}
-
-.navbar__link:hover:after,
-.navbar__link:focus:after {
-  width: 100%;
 }
 
 .footer_main {
@@ -19084,6 +18769,182 @@ a {
 
 .appointment .container-fluid .container .appointment__content .appointment__location .appointment__location_map iframe {
   flex-grow: 1;
+}
+
+.reviewsOfDoctors .container-fluid {
+  background-color: #fcfcfc;
+  padding: 50px 0 40px 0;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__head .reviews__head_text {
+  font-size: 25px;
+  font-family: "Roboto-Light";
+  color: #02a3cc;
+  padding: 0 0 10px 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #02a3cc;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content {
+  padding: 0 45px;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item {
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 10px 30px;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__doctor {
+  font-size: 16px;
+  font-family: "Roboto-Light";
+  color: #02a3cc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__doctor .review__doctor__box-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-image: url("../img/doctor.jpg");
+  background-position: -100px;
+  background-size: auto 150px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 0px 2px #02a3cc;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__doctor .review__doctor__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__doctor .review__doctor__content a {
+  font-size: 17px;
+  font-family: "Roboto-Regular";
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__doctor .review__doctor__content span {
+  font-size: 14px;
+  font-family: "Roboto-Regular";
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+  line-height: 16px;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__customer .review__customer__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__customer .review__customer__content .review__customer__info {
+  font-size: 16px;
+  font-family: "Roboto-Regular";
+  color: #02a3cc;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__customer .review__customer__content .review__customer__info .review__customer__box-img {
+  box-shadow: 0px 0px 1px 2px #02a3cc;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("../img/customer-girl.jpg");
+  background-position: -5px;
+  background-size: auto 50px;
+  position: relative;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__customer .review__customer__content .review__customer__info .review__customer__box-img i {
+  position: absolute;
+  font-size: 18px;
+  background-color: #fff;
+  right: -15px;
+  top: -5px;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__customer .review__customer__content .review__customer__star {
+  align-self: flex-end;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__customer .review__customer__content .review__customer__star i {
+  color: #1ebba3;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__customer .review__customer__content .review__customer__text {
+  font-size: 15px;
+  font-family: "Roboto-Light";
+  color: #000;
+  line-height: 18px;
+  padding: 10px 0 0 0;
+  border-bottom: 1px solid #1ebba3;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__customer .review__customer__content .review__customer__text p {
+  padding-bottom: 15px;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__customer .review__customer__content .review__customer__text p a {
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "Roboto-Regular";
+  color: #02a3cc;
+  display: block;
+  transition: 0.3s all;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__customer .review__customer__content .review__customer__text p a:hover {
+  text-decoration: underline;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item .review__customer .review__customer__content .review__customer__data {
+  text-align: right;
+  font-size: 12px;
+  font-family: "Roboto-Light";
+  color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item:nth-of-type(2) .review__doctor__box-img {
+  background-image: url("../img/doctor-2.jpg");
+  background-position: -70px;
+  background-size: auto 150px;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item:nth-of-type(2) .review__customer
+.review__customer__content
+.review__customer__info
+.review__customer__box-img {
+  background-image: url("../img/customer-girl-2.jpg");
+  background-position: -20px;
+  background-size: auto 50px;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item:nth-of-type(3) .review__doctor__box-img {
+  background-image: url("../img/doctor3.jpg");
+  background-position: 10px;
+  background-size: auto 155px;
+}
+
+.reviewsOfDoctors .container-fluid .container .review__content .review__item:nth-of-type(3) .review__customer
+.review__customer__content
+.review__customer__info
+.review__customer__box-img {
+  background-image: url("../img/customer-men.jpeg");
+  background-position: -5px 0;
+  background-size: auto 100px;
 }
 
 @media screen and (min-width: 36rem) {
@@ -22686,39 +22547,9 @@ a {
   .mx-xl-auto {
     margin-left: auto !important;
   }
-
-  .navbar-logo {
-    display: none;
-  }
 }
 
 @media (max-width: 1199.98px) {
-  .header-nav {
-    padding: 0;
-  }
-
-  .navbar {
-    display: flex;
-  }
-
-  .navbar .navbar__i {
-    font-size: 23px;
-  }
-
-  .header-logo {
-    display: none;
-  }
-
-  .header-logo .header-logo__icon {
-    padding: 0;
-    width: 225px;
-  }
-
-  .navbar-logo {
-    padding: 0;
-    display: block;
-  }
-
   .footer_main .container-fluid .container .footer__section .footer__content .footer__phone {
     flex-direction: column;
   }
@@ -22735,46 +22566,13 @@ a {
     display: flex;
     flex-direction: column;
   }
+
+  .reviewsOfDoctors .container-fluid .container .review__content {
+    padding: 0;
+  }
 }
 
 @media (max-width: 991.98px) {
-  .header-logo__icon {
-    width: 180px;
-    padding-right: 25px;
-  }
-
-  .header-info-box__text strong {
-    font-size: 13px;
-  }
-
-  .header-info-box .header-phone__icon {
-    font-size: 25px;
-  }
-
-  .header-info-box__phone {
-    font-size: 18px;
-  }
-
-  .header-info-box .header-social__link i {
-    display: none;
-  }
-
-  .header-info-box .header-btn {
-    padding: 8px 15px;
-  }
-
-  .navbar .navbar__i {
-    display: none;
-  }
-
-  .navbar .navbar-logo {
-    padding: 0;
-  }
-
-  .navbar__link {
-    font-size: 14px;
-  }
-
   .footer_main .container-fluid .container .footer__section {
     padding: 35px 0;
   }
@@ -22839,67 +22637,29 @@ a {
     padding: 20px 0 0 0;
     height: 100%;
   }
+
+  .reviewsOfDoctors .container-fluid .container .review__content {
+    padding: 0 40px;
+  }
+
+  .reviewsOfDoctors .container-fluid .container .review__content .review__item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .reviewsOfDoctors .container-fluid .container .review__content .review__item .review__doctor {
+    width: 45%;
+    text-align: center;
+  }
+
+  .reviewsOfDoctors .container-fluid .container .review__content .review__item .review__customer {
+    width: 55%;
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 767.98px) {
-  .container-fluid {
-    padding: 0;
-  }
-
-  .header-logo {
-    padding: 10px 0;
-    display: flex;
-  }
-
-  .header-logo .header-logo__icon {
-    width: 180px;
-  }
-
-  .header-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-
-  .header-container .header-info {
-    padding: 12px 0;
-    flex-direction: column-reverse;
-    align-items: baseline;
-  }
-
-  .mobile {
-    display: block;
-  }
-
-  .mobile-menu {
-    display: block;
-  }
-
-  .header-nav {
-    display: none;
-  }
-
-  .header-schedule,
-  .header-phone {
-    padding-bottom: 15px;
-  }
-
-  .header-info-box__icon {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    padding-right: 15px;
-    width: 45px;
-  }
-
-  .header-info-box__text {
-    line-height: 1.5;
-  }
-
-  .header-info-box .header-btn {
-    display: none;
-  }
-
   .footer_main .container-fluid .container .footer__section .footer__content {
     align-items: center;
   }
@@ -22927,6 +22687,25 @@ a {
 
   .appointment .container-fluid .container .appointment__content .appointment__content_main .appointment__contact-form .contact-form__button {
     margin: 30px 0 15px 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .reviewsOfDoctors .container-fluid .container .review__head .reviews__head_text {
+    text-align: center;
+  }
+
+  .reviewsOfDoctors .container-fluid .container .review__content .review__item {
+    flex-direction: column;
+  }
+
+  .reviewsOfDoctors .container-fluid .container .review__content .review__item .review__doctor {
+    width: 100%;
+  }
+
+  .reviewsOfDoctors .container-fluid .container .review__content .review__item .review__customer {
+    width: 100%;
+    padding: 0;
   }
 }
 
