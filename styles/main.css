@@ -20510,8 +20510,12 @@ body {
   color: rgba(80, 80, 80, 0.4);
 }
 
-.callback-bt-input form input[type=submit] {
-  -webkit-border-radius: 0px;
+.callback-bt-input form textarea,
+.callback-bt-input form input[type="text"],
+.callback-bt-input form input[type="button"],
+.callback-bt-input form input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 .callback-bt-input form input[type="submit"] {
@@ -24606,6 +24610,7 @@ body {
     font-family: "Roboto-Light";
     max-width: 150px;
     padding: 7px;
+    border: none;
   }
 
   .callback-bt-input .callback-bt__modal-content {
