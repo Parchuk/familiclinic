@@ -20510,8 +20510,8 @@ body {
   color: rgba(80, 80, 80, 0.4);
 }
 
-.callback-bt-input form input[type="search"] {
-  -webkit-appearance: none;
+.callback-bt-input form input[type=submit] {
+  -webkit-border-radius: 0px;
 }
 
 .callback-bt-input form input[type="submit"] {
@@ -24567,7 +24567,7 @@ body {
   }
 
   .callback-bt-input h4 {
-    padding: 10px 0 20px 0;
+    padding: 20px 0 30px 0;
     font-size: 20px;
   }
 
@@ -24605,10 +24605,11 @@ body {
     font-size: 15;
     font-family: "Roboto-Light";
     max-width: 150px;
+    padding: 7px;
   }
 
   .callback-bt-input .callback-bt__modal-content {
-    padding: 40px 15px 5px 15px;
+    padding: 0 15px 5px 15px;
   }
 }
 
