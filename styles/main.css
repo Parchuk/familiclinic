@@ -20510,6 +20510,10 @@ body {
   color: rgba(80, 80, 80, 0.4);
 }
 
+.callback-bt-input form input[type="search"] {
+  -webkit-appearance: none;
+}
+
 .callback-bt-input form input[type="submit"] {
   max-width: 40%;
   background-color: #00cec8;
