@@ -243,11 +243,11 @@ $(document).ready(function () {
     if ($(window).scrollTop() > 600) {
       btn.addClass('show');
       $("body").css("background-color", "#0c4459");
-      $(".footer_main").css("z-index", "-1");
+      $(".footer_main").css("top", "auto");
     } else {
       btn.removeClass('show');
       $("body").css("background-color", "#fcfcfc");
-      $(".footer_main").css("z-index", "-999");
+      $(".footer_main").css("top", "-700px");
     }
   });
   btn.on('click', function (e) {
