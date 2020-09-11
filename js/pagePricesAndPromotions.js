@@ -435,14 +435,15 @@ var selectPopupWindow = new _js_import_customSelect_customSelect__WEBPACK_IMPORT
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// body = addEventListener('load', function () {
-//     setTimeout(function () {
-//         let preloader = document.querySelector('#page-preloader');
-//         if (!preloader.classList.contains('done')) {
-//             preloader.classList.add('done');
-//         }
-//     }, 1000);
-// });
+body = addEventListener('load', function () {
+  setTimeout(function () {
+    var preloader = document.querySelector('#page-preloader');
+
+    if (!preloader.classList.contains('done')) {
+      preloader.classList.add('done');
+    }
+  }, 1000);
+});
 
 /***/ }),
 
@@ -459,7 +460,7 @@ var selectPopupWindow = new _js_import_customSelect_customSelect__WEBPACK_IMPORT
     if ($(window).scrollTop() > 600) {
       btn.addClass('show');
 
-      if ($(window).scrollTop() + $(window).height() > $(document).height() - ($(".footer_main").height() + $(".appointment").height())) {
+      if ($(window).scrollTop() + $(window).height() > $(document).height() - $(".footer_main").height()) {
         $(".footer_main").css("display", "block");
         $("body").css("background-color", "#0c4459");
       } else {

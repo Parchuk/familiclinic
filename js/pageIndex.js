@@ -243,7 +243,7 @@ $(document).ready(function () {
     if ($(window).scrollTop() > 600) {
       btn.addClass('show');
 
-      if ($(window).scrollTop() + $(window).height() > $(document).height() - ($(".footer_main").height() + $(".appointment").height())) {
+      if ($(window).scrollTop() + $(window).height() > $(document).height() - $(".footer_main").height()) {
         $(".footer_main").css("display", "block");
         $("body").css("background-color", "#0c4459");
       } else {
