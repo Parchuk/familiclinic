@@ -19169,12 +19169,8 @@ ul {
   text-decoration: underline;
 }
 
-body {
-  margin-bottom: 234.14px;
-}
-
 .footer_main {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   left: 0;
   right: 0;
@@ -24556,10 +24552,6 @@ body {
     padding: 25px 110px;
   }
 
-  body {
-    margin-bottom: 242px;
-  }
-
   .footer_main .container-fluid .container .footer__section .footer__content .footer__phone {
     flex-direction: column;
   }
@@ -24675,10 +24667,6 @@ body {
 
   .directionsOfWork .container-fluid .container .directionsOfWork__content .directionsOfWork__card .card__detail {
     display: none;
-  }
-
-  body {
-    margin-bottom: 328.39px;
   }
 
   .footer_main .container-fluid .container .footer__section .footer__content .footer__box-img {
@@ -24855,10 +24843,6 @@ body {
 
   .directionsOfWork .container-fluid .container .directionsOfWork__content .directionsOfWork__card .card__info .card__img {
     padding: 25px 68px;
-  }
-
-  body {
-    margin-bottom: 445.39px;
   }
 
   .footer_main .container-fluid .container .footer__section .footer__content {
