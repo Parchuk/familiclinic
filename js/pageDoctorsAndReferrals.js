@@ -446,15 +446,14 @@ var selectPopupWindow = new _js_import_customSelect_customSelect__WEBPACK_IMPORT
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-body = addEventListener('load', function () {
-  setTimeout(function () {
-    var preloader = document.querySelector('#page-preloader');
-
-    if (!preloader.classList.contains('done')) {
-      preloader.classList.add('done');
-    }
-  }, 1000);
-});
+// body = addEventListener('load', function () {
+//     setTimeout(function () {
+//         let preloader = document.querySelector('#page-preloader');
+//         if (!preloader.classList.contains('done')) {
+//             preloader.classList.add('done');
+//         }
+//     }, 1000);
+// });
 
 /***/ }),
 
