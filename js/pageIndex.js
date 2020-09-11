@@ -243,19 +243,17 @@ $(document).ready(function () {
     if ($(window).scrollTop() > 600) {
       btn.addClass('show');
 
-      if ($(window).scrollTop() + $(window).height() > $(document).height() - ($(".footer_main").height() + $(".appointment").height())) {
-        $(".footer_main").css("display", "block");
-        $("body").css("background-color", "#0c4459");
-      } else {
-        $("body").css("background-color", "#fcfcfc");
-        $(".footer_main").css("display", "none");
-      }
+      if ($(window).scrollTop() + $(window).height() > $(document).height() - ($(".footer_main").height() + $(".appointment").height())) {// $(".footer_main").css("display", "block");
+        // $("body").css("background-color", "#0c4459");
+      } else {// $("body").css("background-color", "#fcfcfc");
+          // $(".footer_main").css("display", "none");
+        }
     } else {
       btn.removeClass('show');
     }
   });
   btn.on('click', function (e) {
-    $(".footer_main").css("display", "none");
+    // $(".footer_main").css("display", "none");
     $('html, body').animate({
       scrollTop: 0
     }, 700);

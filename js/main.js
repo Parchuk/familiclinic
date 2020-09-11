@@ -446,7 +446,6 @@ var selectPopupWindow = new _js_import_customSelect_customSelect__WEBPACK_IMPORT
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-;
 body = addEventListener('load', function () {
   setTimeout(function () {
     var preloader = document.querySelector('#page-preloader');
