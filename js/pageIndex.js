@@ -239,11 +239,11 @@ $(document).ready(function () {
 
 /* WEBPACK VAR INJECTION */(function(jQuery, $) {jQuery(document).ready(function () {
   var btn = $('#upButton');
-  $(window).scroll(function () {
+  window.addEventListener('scroll', function () {
     if ($(window).scrollTop() > 600) {
       btn.addClass('show');
 
-      if ($(window).scrollTop() + $(window).height() > $(document).height() - $(".footer_main").height()) {
+      if ($(window).scrollTop() + $(window).height() > $(document).height() - ($(".footer_main").height() + $(".appointment").height())) {
         $(".footer_main").css("display", "block");
         $("body").css("background-color", "#0c4459");
       } else {
@@ -255,7 +255,7 @@ $(document).ready(function () {
     }
   });
   btn.on('click', function (e) {
-    e.preventDefault();
+    $(".footer_main").css("display", "none");
     $('html, body').animate({
       scrollTop: 0
     }, 700);

@@ -435,14 +435,16 @@ var selectPopupWindow = new _js_import_customSelect_customSelect__WEBPACK_IMPORT
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// body = addEventListener('load', function () {
-//     setTimeout(function () {
-//         let preloader = document.querySelector('#page-preloader');
-//         if (!preloader.classList.contains('done')) {
-//             preloader.classList.add('done');
-//         }
-//     }, 1000);
-// });
+;
+body = addEventListener('load', function () {
+  setTimeout(function () {
+    var preloader = document.querySelector('#page-preloader');
+
+    if (!preloader.classList.contains('done')) {
+      preloader.classList.add('done');
+    }
+  }, 1000);
+});
 
 /***/ }),
 
@@ -455,11 +457,11 @@ var selectPopupWindow = new _js_import_customSelect_customSelect__WEBPACK_IMPORT
 
 /* WEBPACK VAR INJECTION */(function(jQuery, $) {jQuery(document).ready(function () {
   var btn = $('#upButton');
-  $(window).scroll(function () {
+  window.addEventListener('scroll', function () {
     if ($(window).scrollTop() > 600) {
       btn.addClass('show');
 
-      if ($(window).scrollTop() + $(window).height() > $(document).height() - $(".footer_main").height()) {
+      if ($(window).scrollTop() + $(window).height() > $(document).height() - ($(".footer_main").height() + $(".appointment").height())) {
         $(".footer_main").css("display", "block");
         $("body").css("background-color", "#0c4459");
       } else {
@@ -471,7 +473,7 @@ var selectPopupWindow = new _js_import_customSelect_customSelect__WEBPACK_IMPORT
     }
   });
   btn.on('click', function (e) {
-    e.preventDefault();
+    $(".footer_main").css("display", "none");
     $('html, body').animate({
       scrollTop: 0
     }, 700);
