@@ -460,11 +460,12 @@ body = addEventListener('load', function () {
     if ($(window).scrollTop() > 600) {
       btn.addClass('show');
 
-      if ($(window).scrollTop() > 1500) {
-        $("body").css("background-color", "#0c4459"); // $(".footer_main").css("opacity", "1");
+      if ($(window).scrollTop() + $(window).height() > $(document).height() - ($(".footer_main").height() + 250)) {
+        $("body").css("background-color", "#0c4459");
+        $(".footer_main").css("visibility", "visible");
       } else {
-        // $(".footer_main").css("opacity", "0");
         $("body").css("background-color", "#fcfcfc");
+        $(".footer_main").css("visibility", "hidden");
       }
     } else {
       btn.removeClass('show');
