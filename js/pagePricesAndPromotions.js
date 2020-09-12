@@ -469,7 +469,6 @@ body = addEventListener('load', function () {
       }
     } else {
       btn.removeClass('show');
-      $("body").css("background-color", "#fcfcfc");
     }
   });
   btn.on('click', function (e) {
