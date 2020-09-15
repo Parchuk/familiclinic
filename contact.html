@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon" />
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png" />
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="img/favicons/apple-touch-icon-1024x1024.png"
+    />
+    <link rel="stylesheet" href="styles/main.min.css" />
+  </head>
+
+  <body>
+    <!-- preloader -->
+<!-- <div id="page-preloader" class="preloader">
+     <div class="linePreloader"></div>
+     <div class="container-logo">
+         <img src="img/logo.png" alt="">
+     </div>
+ </div> -->
+
+    <!-- end  popupWindowAppointment -->
+<div class="modal-overlay popupWindowAppointment">
+    <div class="modal">
+        <div class="modal-content">
+            <div class="appointment__contact-form">
+                <div class="appointment__content__head_text">
+                    <h3>Запис на прийом <i class="fas fa-calendar-check"></i></h3>
+
+                    <i class="close-modal fal fa-times"></i>
+                </div>
+                <form action="">
+                    <div class="contact-form__main row">
+                        <div class="contact-form__input col-12">
+                            <div class="custom-select">
+                                <div class="wrap">
+                                    <div id="selectPopupWindow"></div>
+                                </div>
+                            </div>
+                            <div class="contact-form__input-name">
+                                <input type="text" name="name" placeholder="ім'я" />
+                            </div>
+                        </div>
+                        <div class="contact-form__input col-12">
+                            <div class="contact-form__input-phone">
+                                <input type="text" name="phone" placeholder="Телефон" />
+                            </div>
+                            <div class="contact-form__input-date">
+                                <input type="date" name="date" value="2018-07-22" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form__button">
+                        <input type="submit" value="Записатись" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end  popupWindowAppointment -->
+    <!-- start callback-bt -->
+<div type="button" class="callback-bt">
+    <div class="text-call">
+        <i class="fas fa-phone-alt"></i>
+        <span>замовити <br> дзвінок</span>
+    </div>
+</div>
+<!-- end callback-bt -->
+<div class="modal-overlay__bt-input">
+    <div class="callback-bt-input">
+        <div class="callback-bt__modal-content">
+            <h4>Хочете, зателефонуємо Вам? <i class="fas fa-mobile-android-alt"></i></h4>
+            <i class="close-modal fal fa-times"></i>
+            <form action="">
+                <input id="focus" type="text" name="phone" placeholder="Ваш номер телефону">
+                <input type="submit" value="Зателефонуйте">
+            </form>
+            <p>Наприклад: 067 000 00 00</p>
+        </div>
+
+    </div>
+</div>
+    <!-- start upButton -->
+<a id="upButton"></a>
+<!-- end upButton -->
+    <!-- *start header* -->
+<header class="header">
+  <div class="container-fluid header-top">
+    <div class="container">
+      <div class="header-top__section">
+        <div class="header-top__info address">
+          <a href="#">
+            <i class="far fa-map-marker-alt"></i>
+            Рівне, <span>вул. Різдвяна</span>
+          </a>
+        </div>
+        <div class="header-top__info">
+          <i class="far fa-clock"></i>
+          <span>Пн-Пт 9:00 - 21:00 | Cб-Нд 9:00 - 18:00</span>
+        </div>
+        <div class="header-top__info header-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <button class="header-top__btn">
+          <i class="far fa-calendar-alt"></i>
+          Запис на прийом
+        </button>
+        <div class="header-top__info h-phone">
+          <i class="far fa-phone-alt"></i>
+          <a href="tel:+380662222233">+38 066 222 22 33</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid header-navigation">
+    <div class="container">
+      <div class="header-navigation__section">
+        <div class="container container-nav">
+          <div class="logo" href="">
+            <a class="logo-link" href="index.html">
+              <img src="img/logo.png" alt="logo" />
+            </a>
+          </div>
+          <nav class="navigation">
+            <ul>
+              <li>
+                <a class="navigation__link" href="DoctorsAndReferrals.html">Лікарі та напрями</a>
+              </li>
+              <li><a class="navigation__link" href="PricesAndPromotions.html">Вартість</a></li>
+              <li><a class="navigation__link" href="#">Про нас</a></li>
+              <li><a class="navigation__link link-red" href="discounts.html">Акції %</a></li>
+              <li><a class="navigation__link" href="contact.html">Контакти</a></li>
+              <li><a class="navigation__link" href="#">F.A.Q</a></li>
+            </ul>
+          </nav>
+          <!-- mobile nav -->
+          <div class="mobile-menu">
+            <button class="mobile-btn">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+              <span class="bar bar3"></span>
+              <span class="bar bar4"></span>
+            </button>
+          </div>
+          <div class="mobile-navigation">
+            <div class="container">
+              <a href="DoctorsAndReferrals.html">Лікарі та напрямки</a>
+              <a href="PricesAndPromotions.html">Вартість</a>
+              <a href="#">Про нас</a>
+              <a class="link-red" href="#">Акції %</a>
+              <a href="contact.html">Контакти</a>
+              <a href="#">F.A.Q</a>
+              <div class="mobile-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <!--/ mobile-nav -->
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- *end header- -->
+
+    <div class="mainContact">
+  <div class="breadcrumbs">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="breadcrumbs__content">
+            <a href="index.html">Головна</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Контакти</span>
+          </div>
+          <div>
+            <div class="mainContact__head-text">
+              <h3>Наші контакти</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mainContact__content">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="mainContact__content-address col-12 col-md-5 col-lg-4">
+            <div class="content-address__photo-clinic">
+              <div class="box-img">
+                <img src="img/VM7A5560-500.png" alt="photo-clinic" />
+              </div>
+            </div>
+            <div class="content-address__main">
+              <ul class="content-address__main-content">
+                <li>
+                  <span>Адреса</span>
+                  <p>
+                    вул. Різдвяна 2a,<br />
+                    Рівне, Україна
+                  </p>
+                </li>
+                <li>
+                  <span>E-mail</span>
+
+                  <p>
+                    <a href="mailto:familyclinic.com.ua@gmail.com"
+                      ><i class="fal fa-envelope"></i>family-clinic.com.ua@gmail.com</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <span>Телефон</span>
+                  <p>
+                    <a href="tel:+38 (067) 222-32-40"
+                      ><i class="fal fa-phone-alt"></i>+38 (067) 222-12-40</a
+                    ><br />
+                    <a href="tel:+38 (067) 222-32-40"
+                      ><i class="fal fa-phone-alt"></i>+38 (067) 222-12-40</a
+                    ><br />
+                    <a href="tel:+38 (067) 222-32-40"
+                      ><i class="fab fa-telegram-plane"></i>+38 (067) 222-12-44</a
+                    ><br />
+                    <a href="tel:+38 (067) 222-32-40"
+                      ><i class="fab fa-viber"></i>+38 (067) 222-12-40</a
+                    >
+
+                    <br />
+                    <i class="fab fa-skype"></i> Skype - family-clinic
+                  </p>
+                </li>
+                <li>
+                  <span>Графік роботи</span>
+                  <p>
+                    ПН - ПТ 09:00 - 21:00 <br />
+                    СБ-НД 09:00 - 19:00
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mainContact__content-map col-12 col-md-7 col-lg-8">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2532.6047036742766!2d26.252502515736676!3d50.59730017949591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472f13224f8d6397%3A0x51bed89a3a8c3155!2z0KHRltC80LXQudC90LAg0LrQu9GW0L3RltC60LAg0L3QsCDQoNGW0LfQtNCy0Y_QvdGW0Lk!5e0!3m2!1suk!2sua!4v1598020230681!5m2!1suk!2sua"
+              frameborder="0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="write-to-us">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="write-to-us__head-text">
+          <h3>Написати нам</h3>
+        </div>
+        <form action="" class="row">
+          <div class="write-to-us__box_inputs col-12 col-lg-5">
+            <span>
+              <i class="fal fa-user"></i>
+              <input type="text" name="name" value="" size="40" placeholder="Ім'я" />
+            </span>
+            <span>
+              <i class="fal fa-envelope"></i>
+              <input type="email" name="my-email" value="" size="40" placeholder="Email"
+            /></span>
+          </div>
+          <div class="write-to-us__box_textarea col-12 col-lg-7">
+            <textarea name="" id="" rows="6" placeholder="Ваше повідомлення"></textarea>
+          </div>
+          <div class="contact-form__button">
+            <input type="submit" value="Надіслати" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- **********     start  appointment      ********** -->
+<section class="appointment">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="appointment__content">
+        <div class="appointment__content_main row">
+          <div class="appointment__contact-form col-12 col-lg-5">
+            <div class="appointment__content__head_text">
+              <h3>Запис на прийом</h3>
+            </div>
+            <form action="">
+              <div class="contact-form__main row">
+                <div class="contact-form__input col-12 col-md-6">
+                  <div class="custom-select">
+                    <div class="wrap">
+                      <div id="select"></div>
+                    </div>
+                  </div>
+                  <div class="contact-form__input-name">
+                    <input type="text" name="name" placeholder="ім'я" />
+                  </div>
+                </div>
+                <div class="contact-form__input col-12 col-md-6">
+                  <div class="contact-form__input-phone">
+                    <input type="text" name="phone" placeholder="Телефон" />
+                  </div>
+                  <div class="contact-form__input-date">
+                    <input type="date" name="date" value="2018-07-22" />
+                  </div>
+                </div>
+              </div>
+              <div class="contact-form__button">
+                <input type="submit" value="Записатись" />
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-lg-7 appointment__location p-0">
+            <div class="appointment__location__head-text">
+              <h3>Як добратися</h3>
+            </div>
+            <div class="appointment__location_map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2532.6047036742766!2d26.252502515736676!3d50.59730017949591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472f13224f8d6397%3A0x51bed89a3a8c3155!2z0KHRltC80LXQudC90LAg0LrQu9GW0L3RltC60LAg0L3QsCDQoNGW0LfQtNCy0Y_QvdGW0Lk!5e0!3m2!1suk!2sua!4v1598020230681!5m2!1suk!2sua"
+                frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- **********     end  appointment      ********** -->
+    <!--  start ***************** Footer ***************** -->
+<footer class="footer_main">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="footer__section row">
+        <div class="footer__content col-lg-4 col-md-6 col-sm-12">
+          <div class="footer__box-img">
+            <img src="img/logo.png" alt="logo" />
+          </div>
+          <a href="#" class="footer__address">
+            <i class="fal fa-map-marker-check"></i>
+            <span>Рівне, Вул. Різдвяна, 2а</span>
+          </a>
+        </div>
+        <div class="footer__content col-lg-4 col-md-6">
+          <p class="footer__work-schedule">
+            пн - пт 09:00 - 21:00, &nbsp;&nbsp; сб-нд 09:00 - 19:00
+          </p>
+          <ul class="footer__phone">
+            <li>
+              <a href="tel:+38 (067) 222-12-40">+38 (067) 222-12-40</a>
+            </li>
+            <li>
+              <a href="tel:+38 (067) 222-32-40">+38 (067) 222-12-40</a>
+            </li>
+          </ul>
+          <p class="footer__email">
+            <i class="fal fa-envelope"></i>
+            <a href="mailto:familyclinic.com.ua@gmail.com">family-clinic.com.ua@gmail.com</a>
+          </p>
+        </div>
+        <div class="footer__content col-lg-4 col-md-12">
+          <div class="row">
+            <div class="footer__block-time-work col-lg-6 col-md-5">
+              <ul class="footer__social-links">
+                <li>
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+              <p class="footer__year">
+                2020, "сімейна клініка <br />
+                на Різдвяній"
+              </p>
+              <p class="footer__all-rules">&copy; Всі права захищені</p>
+            </div>
+            <div class="footer__block-btn col-lg-6 col-md-5">
+              <i class="fas fa-user-md-chat"></i>
+              <a class="btn-8 custom-btn" href="#">залишити відгук</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--  end ***************** Footer ***************** -->
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/pageContact.min.js"></script>
+  </body>
+</html>
