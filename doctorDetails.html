@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>gulp-scss-starter</title>
     <meta name="theme-color" content="#fff" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-    <meta name="format-detection" content="telephone=no">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="format-detection" content="telephone=no" />
     <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon" />
     <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png" />
     <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png" />
@@ -25,11 +26,15 @@
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png" />
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png" />
-    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="img/favicons/apple-touch-icon-1024x1024.png"
+    />
     <link rel="stylesheet" href="styles/main.min.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- preloader -->
 <div id="page-preloader" class="preloader">
   <div class="linePreloader"></div>
@@ -185,7 +190,7 @@
 </header>
 <!-- *end header- -->
 
-    <div class="mainDoctorsAndReferrals">
+    <div class="doctorDetails">
   <div class="breadcrumbs">
     <div class="container-fluid">
       <div class="container">
@@ -193,237 +198,92 @@
           <div class="breadcrumbs__content">
             <a href="index.html">Головна</a>
             <i class="fas fa-chevron-right"></i>
-            <span>Лікарі та напрямки</span>
+            <a href="DoctorsAndReferrals.html">Лікарі та напрямки</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Маслович Наталия Константиновна</span>
           </div>
           <div>
             <div class="referrals__head-text">
-              <h3>Напрямки <span> Наша клініка на Різдвяній та її команда</span></h3>
+              <h3>Сторінка лікаря</h3>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="mainDoctorsAndReferrals__navbar col-12 col-md-4 col-lg-3">
-          <ul class="mainDoctorsAndReferrals__navbar-content">
-            <li>
-              <div class="box-img">
-                <img src="img/directionsOfWork/2.svg" alt="Family" />
-              </div>
-              <a href="#">Cімейний лікар</a>
-            </li>
-
-            <li>
-              <div class="box-img">
-                <img src="img/directionsOfWork/urology-kidney-svgrepo-com.svg" alt="Family" />
-              </div>
-              <a href="#">Урологія</a>
-            </li>
-            <li>
-              <div class="box-img">
-                <img src="img/directionsOfWork/7.svg" alt="Family" />
-              </div>
-              <a href="#">Ультразвукова діагностика</a>
-            </li>
-            <li>
-              <div class="box-img">
-                <img src="img/directionsOfWork/8.svg" alt="Family" />
-              </div>
-              <a href="#">Отоларинологія (ЛОР)</a>
-            </li>
-            <li>
-              <div class="box-img">
-                <img src="img/directionsOfWork/10.svg" alt="Family" />
-              </div>
-              <a href="#">Массаж</a>
-            </li>
-            <li>
-              <div class="box-img">
-                <img src="img/directionsOfWork/12.svg" alt="Family" />
-              </div>
-              <a href="#">Гінекологія</a>
-            </li>
-            <li>
-              <div class="box-img">
-                <img src="img/directionsOfWork/14.svg" alt="Family" />
-              </div>
-              <a href="#">Дерматологія</a>
-            </li>
-            <li>
-              <div class="box-img">
-                <img src="img/directionsOfWork/15.svg" alt="Family" />
-              </div>
-              <a href="#">Косметологія</a>
-            </li>
-            <li>
-              <div class="box-img">
-                <img src="img/directionsOfWork/operating-room-svgrepo-com.svg" alt="Family" />
-              </div>
-              <a href="#">Хірургія</a>
-            </li>
-            <li>
-              <div class="box-img">
-                <img src="img/directionsOfWork/school-svgrepo-com.svg" alt="Family" />
-              </div>
-              <a href="#">Школа мам</a>
-            </li>
-          </ul>
-        </div>
-        <div class="mainDoctorsAndReferrals__cartsOfDoctors col-12 col-md-8 col-lg-9">
-          <div class="ourDoctors__head-text">
-            <h3>Наша клініка на Різдвяній та її команда</h3>
+  <div class="doctorDetails__content">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="box-photo col-4">
+            <img src="img/vera-datser.jpg" alt="photo-doctor" />
           </div>
-          <div class="ourDoctors__main">
-            <div class="ourDoctors__cards">
-              <a href="doctorDetails.html" class="ourDoctors__item">
-                <div class="ourDoctors__box-img">
-                  <img src="img/ourDoctors2.jpg" alt="Doctor" />
-                </div>
-                <div class="ourDoctors__rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-                <div class="ourDoctors__name">
-                  <p>Маслович Наталия Константиновна</p>
-                </div>
-                <div class="ourDoctors__trade">
-                  <p>Ортопед-травматолог Ортопед-травматологг</p>
-                </div>
-              </a>
-              <a href="doctorDetails.html" class="ourDoctors__item">
-                <div class="ourDoctors__box-img">
-                  <img src="img/ourDoctors1.jpg" alt="Doctor" />
-                </div>
-                <div class="ourDoctors__rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-                <div class="ourDoctors__name">
-                  <p>Маслович Юрий Константинович</p>
-                </div>
-                <div class="ourDoctors__trade">
-                  <p>Ортопед-травматологг</p>
-                </div>
-              </a>
-              <a href="doctorDetails.html" class="ourDoctors__item">
-                <div class="ourDoctors__box-img">
-                  <img src="img/ourDoctors3.jpg" alt="Doctor" />
-                </div>
-                <div class="ourDoctors__rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-                <div class="ourDoctors__name">
-                  <p>Маслович Антон Константинович</p>
-                </div>
-                <div class="ourDoctors__trade">
-                  <p>Ортопед-травматологг</p>
-                </div>
-              </a>
-
-              <a href="doctorDetails.html" class="ourDoctors__item">
-                <div class="ourDoctors__box-img">
-                  <img src="img/ourDoctors4.jpg" alt="Doctor" />
-                </div>
-                <div class="ourDoctors__rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <div class="ourDoctors__name">
-                  <p>Екатерина Серая Юрьевна</p>
-                </div>
-                <div class="ourDoctors__trade">
-                  <p>Ортопед-травматологг</p>
-                </div>
-              </a>
-              <a href="doctorDetails.html" class="ourDoctors__item">
-                <div class="ourDoctors__box-img">
-                  <img src="img/ourDoctors5.jpg" alt="Doctor" />
-                </div>
-                <div class="ourDoctors__rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-                <div class="ourDoctors__name">
-                  <p>Щеринская Илона Юрьевна</p>
-                </div>
-                <div class="ourDoctors__trade">
-                  <p>Ортопед-травматологг</p>
-                </div>
-              </a>
-              <a href="doctorDetails.html" class="ourDoctors__item">
-                <div class="ourDoctors__box-img">
-                  <img src="img/ourDoctors6.jpg" alt="Doctor" />
-                </div>
-                <div class="ourDoctors__rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-                <div class="ourDoctors__name">
-                  <p>Щеринская Илона Юрьевна</p>
-                </div>
-                <div class="ourDoctors__trade">
-                  <p>Ортопед-травматологг</p>
-                </div>
-              </a>
-              <a href="doctorDetails.html" class="ourDoctors__item">
-                <div class="ourDoctors__box-img">
-                  <img src="img/ourDoctors2.jpg" alt="Doctor" />
-                </div>
-                <div class="ourDoctors__rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-                <div class="ourDoctors__name">
-                  <p>Маслович Наталия Константиновна</p>
-                </div>
-                <div class="ourDoctors__trade">
-                  <p>Ортопед-травматологг</p>
-                </div>
-              </a>
-              <a href="doctorDetails.html" class="ourDoctors__item">
-                <div class="ourDoctors__box-img">
-                  <img src="img/ourDoctors1.jpg" alt="Doctor" />
-                </div>
-                <div class="ourDoctors__rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-                <div class="ourDoctors__name">
-                  <p>Маслович Юрий Константинович</p>
-                </div>
-                <div class="ourDoctors__trade">
-                  <p>Ортопед-травматологг</p>
-                </div>
-              </a>
+          <div class="description-doctor col-8">
+            <div class="doctor__text-head">
+              <h1>Маслович Наталия Константиновна</h1>
             </div>
+            <div class="doctorDetails__rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <span class="count__rating"> 14 </span>
+            </div>
+            <ul class="details-info">
+              <li class="experience">
+                <div class="box-img">
+                  <img src="img/clock.svg" alt="clock" />
+                </div>
+                <span>Стаж роботи: <span>2 роки</span></span>
+              </li>
+              <li class="category">
+                <div class="box-img">
+                  <img src="img/menu.svg" alt="menu" />
+                </div>
+                <span>Категорія: <span>перша</span></span>
+              </li>
+              <li class="phones-for-recording">
+                <div class="box-img">
+                  <img src="img/phone.svg" alt="phone" />
+                </div>
+                <span
+                  >Телефони для записів:
+                  <span> (095) 284-84-34, (098) 651-17-49, (063) 720-93-03</span>
+                </span>
+              </li>
+              <li class="specialization">
+                <div class="box-img">
+                  <img src="img/diploma.svg" alt="diploma" />
+                </div>
+                <span>Спеціалізація: <span>Отоларингологія (ЛОР)</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10 more-info__content">
+              <div class="position">
+                Займана посада у даний час: <span>лікар-отоларинголог (ЛОР)</span>
+              </div>
+              <div class="education">
+                Освіта: <span>Буковинський державний медичний університет</span>
+              </div>
+              <div class="treated">
+                Хвороби, які лікує:
+                <span
+                  >риніт, фарингіт, тонзиліт, гайморит, ларингіт, отит, лікування закладеності носа
+                  і носових кровотеч, диференціювання алергічного і запального риніту.</span
+                >
+              </div>
+              <div class="procedures">
+                Процедури, які виконує:<span
+                  >вливання лікарських засобів в гортань, катетеризація слухових труб, пневмомасаж
+                  барабанних перетинок, продування слухових труб, промивання пазух носа по Проетцу
+                  (зозуля), туалет носа, видалення сірчаної пробки та інші.</span
+                >
+              </div>
+          </div>
           </div>
         </div>
       </div>
@@ -548,7 +408,6 @@
 <!--  end ***************** Footer ***************** -->
 
     <script src="js/vendor.min.js"></script>
-    <script src="js/pageDoctorsAndReferrals.min.js"></script>
-</body>
-
+    <script src="js/pageDoctorDetails.min.js"></script>
+  </body>
 </html>
