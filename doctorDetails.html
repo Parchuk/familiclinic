@@ -31,17 +31,17 @@
       sizes="1024x1024"
       href="img/favicons/apple-touch-icon-1024x1024.png"
     />
-    <link rel="stylesheet" href="styles/main.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
 
   <body>
     <!-- preloader -->
-<div id="page-preloader" class="preloader">
+<!-- <div id="page-preloader" class="preloader">
   <div class="linePreloader"></div>
   <div class="container-logo">
     <img src="img/logo.png" alt="" />
   </div>
-</div>
+</div> -->
 
     <!-- end  popupWindowAppointment -->
 <div class="modal-overlay popupWindowAppointment">
@@ -455,6 +455,60 @@
       </div>
     </div>
   </div>
+  <div class="doctorDetails__form-reviews">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="head-text">
+          <h5>
+            Для того залишити свій відгук <br />
+            авторизуйтесь за допомогою одного з нижче перерахованих способів
+          </h5>
+        </div>
+        <div class="authorization-box">
+          <a href="" class="instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="google"><i class="fab fa-google"></i> </a>
+          <a href="" class="facebook"> <i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="row">
+          <div class="form-reviews__content col-8">
+            <form action="">
+              <div class="form-reviews__top-section">
+                <div class="user_info">
+                  <div class="user_info__box-logo">
+                    <img src="img/user-reviews.svg" alt="user" />
+                  </div>
+                  <div class="user_name">Ім'я</div>
+                </div>
+                <div class="review__rating-container">
+                  <div class="review-text">Оцінка</div>
+                  <div class="review__rating-box">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <label for="textReviews">
+                <textarea
+                  name="textReviews"
+                  id="textReviews"
+                  rows="6"
+                  placeholder="Ваш коментар"
+                ></textarea>
+              </label>
+              <div class="form-reviews__button">
+                <input type="submit" value="Опублікувати" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
     <!-- **********     start  appointment      ********** -->
@@ -573,7 +627,7 @@
 </footer>
 <!--  end ***************** Footer ***************** -->
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/pageDoctorDetails.min.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/pageDoctorDetails.js"></script>
   </body>
 </html>
