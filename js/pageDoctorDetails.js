@@ -316,32 +316,28 @@ $(document).ready(function ($) {
     responsiveClass: true,
     dots: false,
     mouseDrag: false,
+    touchDrag: false,
     smartSpeed: 900,
     responsive: {
       0: {
         items: 1,
-        nav: true,
-        loop: false
+        nav: true
       },
       430: {
         items: 2,
-        nav: true,
-        loop: false
+        nav: true
       },
       575.98: {
         items: 3,
-        nav: true,
-        loop: false
+        nav: true
       },
       991.98: {
         items: 5,
-        nav: true,
-        loop: false
+        nav: true
       },
       1199.98: {
         items: 6,
-        nav: true,
-        loop: false
+        nav: true
       }
     }
   });

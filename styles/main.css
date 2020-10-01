@@ -21819,10 +21819,6 @@ body {
   transition: all 0.3s;
 }
 
-.doctorDetails .slider-certificates .container-fluid .container .slider-certificates__content .certificates-carousel .item:hover {
-  transform: scale(1.1);
-}
-
 .doctorDetails .slider-certificates .container-fluid .container .slider-certificates__content .certificates-carousel .item img {
   cursor: pointer;
 }
@@ -24016,6 +24012,12 @@ body {
   .ml-md-auto,
   .mx-md-auto {
     margin-left: auto !important;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .doctorDetails .slider-certificates .container-fluid .container .slider-certificates__content .certificates-carousel .item:hover {
+    transform: scale(1.1);
   }
 }
 
