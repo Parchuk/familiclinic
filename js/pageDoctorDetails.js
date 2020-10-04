@@ -312,11 +312,10 @@ $(document).ready(function ($) {
 
 /* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
   $('.certificates-carousel').owlCarousel({
-    loop: true,
+    loop: false,
     responsiveClass: true,
     dots: false,
     mouseDrag: false,
-    touchDrag: false,
     smartSpeed: 900,
     responsive: {
       0: {
@@ -344,6 +343,7 @@ $(document).ready(function ($) {
 });
 $('.certificates-carousel').click(function (e) {
   if (e.target.tagName === "IMG" && e.target.src) {
+    console.log(e.target);
     document.querySelector('.certificate__modal-content img').setAttribute('src', e.target.src);
   }
 });
