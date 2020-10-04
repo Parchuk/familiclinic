@@ -316,6 +316,7 @@ $(document).ready(function ($) {
     responsiveClass: true,
     dots: false,
     mouseDrag: false,
+    touchDrag: false,
     smartSpeed: 900,
     responsive: {
       0: {
